@@ -3,7 +3,9 @@ The wrapper of TensorBoardX
 You can write inference functions with summarization codes
 - summarization will work only in `with summarizer.enable():`
 - no need to write redundant `if - else`
-- no need to pass the `SummaryWriter` instance to subnetworks
+- no need to pass a `SummaryWriter` instance to subnetworks
+  - summarizer have a `Summarizer` instance as module variable
+  - all you need is `import summarizer` in each source codes
 
 ## Usage
 ```python
